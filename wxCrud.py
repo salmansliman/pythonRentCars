@@ -184,7 +184,7 @@ class CarRentalApp(wx.Frame):
         self.cur.execute('INSERT INTO cars (id, brand, model, price, rented) VALUES (?,?,?,?,?)', car_data)
         self.db.commit()
         print("Car added successfully.")
-        wx.MessageBox(f"Car with ID {id} has been deleted.", "Success", wx.OK | wx.ICON_INFORMATION)
+        wx.MessageBox(f"Car with ID {id} has been Added.", "Success", wx.OK | wx.ICON_INFORMATION)
         
     def on_delete_car(self, event):
 
@@ -395,7 +395,7 @@ class CarRentalApp(wx.Frame):
         self.cur.execute('INSERT INTO customers (id, first_name, last_name, phone_number) VALUES (?,?,?,?)', customer_data)
         self.db.commit()
         print("Car added successfully.")
-        wx.MessageBox(f"Customer with ID {id} has been deleted.", "Success", wx.OK | wx.ICON_INFORMATION)
+        wx.MessageBox(f"Customer with ID {id} has been Added.", "Success", wx.OK | wx.ICON_INFORMATION)
     def on_delete_customers(self,event):
         delete_customers_frame = wx.Frame(self, title="Delete customers", size=(300, 200))
 
